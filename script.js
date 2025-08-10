@@ -1,4 +1,4 @@
-import "../styles.css";
+import "./styles.css";
 
 const divideButton = document.getElementById("divideButton");
 const multiplyButton = document.getElementById("multiplyButton");
@@ -16,6 +16,7 @@ let currentNumber = 0;
 let lastOperation = null;
 
 function handleOperation(op) {
+  currentNumberDiv.style.display = "block";
   const num = Number(display.value);
   if (isNaN(num)) return;
 
@@ -43,8 +44,9 @@ function handleResult() {
   else if (lastOperation === "/") currentNumber /= num;
 
   currentNumberDiv.textContent = currentNumber;
-  display.value = "";
+  display.value = currentNumber;
   lastOperation = null;
+  currentNumberDiv.style.display = "none";
 }
 
 addButton.addEventListener("click", () => handleOperation("+"));
@@ -63,6 +65,7 @@ display.addEventListener("keydown", (event) => {
 digitButton.forEach((button) => {
   button.addEventListener("click", () => {
     display.value += button.textContent;
+    currentNumberDiv.style.display = "block";
   });
 });
 
