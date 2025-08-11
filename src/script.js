@@ -86,3 +86,13 @@ signButton.addEventListener("click", () => {
   if (isNaN(num)) return;
   display.value = (-num).toString();
 });
+
+
+
+
+function sayHello() {
+  console.log("Hello world")
+}
+
+sayHello()
+
