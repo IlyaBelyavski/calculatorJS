@@ -8,7 +8,7 @@ module.exports = (env, argv) => {
     const isProduction = argv.mode === "production";
 
     return {
-        entry: "./script.js",
+        entry: "./src/script.js",
         output: {
             path: path.resolve(__dirname, "dist"),
             filename: isProduction ? "bundle.[contenthash].js" : "bundle.js",
@@ -26,7 +26,7 @@ module.exports = (env, argv) => {
         },
         plugins: [
             new HtmlWebpackPlugin({
-                template: "./index.html",
+                template: "./src/index.html",
                 minify: isProduction
                     ? {
                         collapseWhitespace: true,

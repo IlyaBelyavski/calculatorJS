@@ -1,5 +1,3 @@
-import "./styles.css";
-
 const divideButton = document.getElementById("divideButton");
 const multiplyButton = document.getElementById("multiplyButton");
 const subtractButton = document.getElementById("subtractButton");
