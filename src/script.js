@@ -89,10 +89,9 @@ signButton.addEventListener("click", () => {
 
 
 
+var unusedVariable = 42
 
-function sayHello() {
-  console.log("Hello world")
+function test() {
+  console.log("Hello"
 }
-
-sayHello()
 
