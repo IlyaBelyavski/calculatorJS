@@ -13,6 +13,7 @@ module.exports = (env, argv) => {
             path: path.resolve(__dirname, "dist"),
             filename: isProduction ? "bundle.[contenthash].js" : "bundle.js",
             clean: true,
+            publicPath: "/calculatorJS/",
         },
         mode: isProduction ? "production" : "development",
         devtool: isProduction ? false : "source-map",

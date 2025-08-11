@@ -1,3 +1,5 @@
+import "./styles.css";
+
 const divideButton = document.getElementById("divideButton");
 const multiplyButton = document.getElementById("multiplyButton");
 const subtractButton = document.getElementById("subtractButton");
@@ -13,7 +15,7 @@ const signButton = document.getElementById("signButton");
 let currentNumber = 0;
 let lastOperation = null;
 
-function handleOperation(op) {
+const handleOperation = (op) => {
   currentNumberDiv.style.display = "block";
   const num = Number(display.value);
   if (isNaN(num)) return;
@@ -32,7 +34,7 @@ function handleOperation(op) {
   currentNumberDiv.textContent = currentNumber;
 }
 
-function handleResult() {
+const handleResult =() => {
   const num = Number(display.value);
   if (isNaN(num) || lastOperation === null) return;
 
