@@ -15,10 +15,10 @@ https://docs.google.com/document/d/1zpXXeSae-BlcxPKgw3DhxZA92cspVailrPYoaXSYrW8/
 
 
 To build an optimized production version of the app, run: <br>
-- npm run build
+* npm run build
 
-- `npm run lint` — runs ESLint to check the code for errors.
-- `npm run format` — runs Prettier to automatically format the code.
+* `npm run lint` — runs ESLint to check the code for errors.
+* `npm run format` — runs Prettier to automatically format the code.
 
 
 
